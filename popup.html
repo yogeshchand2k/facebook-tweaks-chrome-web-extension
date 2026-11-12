@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Facebook Tweaks</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Facebook Tweaks</h1>
+      </header>
+
+      <section>
+        <fieldset id="settings" disabled>
+          <legend class="visually-hidden">Facebook tweaks</legend>
+          <label class="setting">
+            <span class="setting-copy">
+              <span class="setting-title">Hide left panel</span>
+            </span>
+            <input type="checkbox" name="hideLeftNavigation">
+          </label>
+          <label class="setting">
+            <span class="setting-copy">
+              <span class="setting-title">Hide right panel</span>
+            </span>
+            <input type="checkbox" name="hideRightPanel">
+          </label>
+          <label class="setting">
+            <span class="setting-copy">
+              <span class="setting-title">Hide top post bar</span>
+            </span>
+            <input type="checkbox" name="hideTopPostBar">
+          </label>
+          <label class="setting">
+            <span class="setting-copy">
+              <span class="setting-title">Hide story bar</span>
+            </span>
+            <input type="checkbox" name="hideStoryBar">
+          </label>
+          <label class="setting">
+            <span class="setting-copy">
+              <span class="setting-title">Hide tab bar</span>
+            </span>
+            <input type="checkbox" name="hideTabBar">
+          </label>
+          <label class="setting">
+            <span class="setting-copy">
+              <span class="setting-title">Hide Reels section</span>
+            </span>
+            <input type="checkbox" name="hideReelsSection">
+          </label>
+          <label class="setting">
+            <span class="setting-copy">
+              <span class="setting-title">Hide new message button</span>
+            </span>
+            <input type="checkbox" name="hideNewMessageButton">
+          </label>
+          <label class="setting setting-hidden" hidden>
+            <span class="setting-copy">
+              <span class="setting-title">Enable compact mode</span>
+            </span>
+            <input type="checkbox" name="moveFeedToRight">
+          </label>
+          <label class="setting setting-hidden" hidden>
+            <span class="setting-copy">
+              <span class="setting-title">Hide Ad sections</span>
+            </span>
+            <input type="checkbox" name="hideAdSections">
+          </label>
+        </fieldset>
+      </section>
+
+      <p id="status" role="status" aria-live="polite"></p>
+    </main>
+  </body>
+</html>

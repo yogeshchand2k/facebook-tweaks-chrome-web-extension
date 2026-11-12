@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Build output (if using Vite)
+dist/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Private signing keys
+*.pem
+
+# OS files
+.DS_Store
+
+# Editor
+.vscode/
+.idea/

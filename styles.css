@@ -1,0 +1,75 @@
+[data-page-tweaks-facebook-left-panel],
+[data-page-tweaks-facebook-right-panel],
+[data-page-tweaks-facebook-top-post-bar],
+[data-page-tweaks-facebook-story-bar],
+[data-page-tweaks-facebook-tab-bar],
+[data-page-tweaks-facebook-reels-section],
+[data-page-tweaks-facebook-new-message-button] {
+  display: none !important;
+}
+
+html[data-page-tweaks-facebook-hide-ad-sections] .xod5an3:has([data-ad-preview="message"]):not(:has(.xod5an3 [data-ad-preview="message"])) {
+  display: none !important;
+}
+
+html[data-page-tweaks-facebook-move-feed-right] [role="main"] > :first-child {
+  position: fixed !important;
+  inset: 56px 0 0 auto !important;
+  width: min(400px, 100vw) !important;
+  height: calc(100vh - 56px) !important;
+  max-height: calc(100vh - 56px) !important;
+  margin: 0 !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain;
+  z-index: 20;
+}
+
+html[data-page-tweaks-facebook-move-feed-right] [style*="translate("] {
+  z-index: 1000 !important;
+}
+
+.website-tweaks-preview {
+  position: fixed;
+  inset: 56px min(400px, 100vw) 0 0;
+  display: grid;
+  overflow: hidden;
+  place-items: center;
+  z-index: 19;
+  color: var(--primary-text, CanvasText);
+  color-scheme: light dark;
+  background: var(--web-wash, Canvas);
+  pointer-events: none;
+}
+
+.website-tweaks-preview[data-source-url] {
+  pointer-events: auto;
+}
+
+.website-tweaks-preview iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  color-scheme: light dark;
+}
+
+.website-tweaks-preview img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.website-tweaks-preview__empty {
+  max-width: 28rem;
+  margin: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 20px !important;
+  font-weight: 500;
+  color: var(--primary-text, #1c1e21) !important;
+}
+
+html.__fb-dark-mode .website-tweaks-preview__empty {
+  color: var(--primary-text, #e4e6eb) !important;
+}
